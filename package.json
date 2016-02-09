@@ -1,5 +1,5 @@
 {
-  "name": "simple-template-webpack-express",
+  "name": "facturas",
   "version": "0.1.0",
   "description": "A simple template with webpack and express",
   "main": "index.js",
@@ -15,7 +15,9 @@
   "author": "albizures <albizures3601@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "angular": "^1.4.9",
     "express": "^4.13.3",
+    "moment": "^2.11.2",
     "nodemon": "^1.8.1",
     "serve-favicon": "^2.3.0",
     "webpack": "^1.12.8"
@@ -37,6 +39,7 @@
     "jade-loader": "^0.8.0",
     "jscs": "^2.6.0",
     "jscs-loader": "^0.2.0",
+    "ng-annotate-loader": "^0.1.0",
     "style-loader": "^0.13.0",
     "stylus": "^0.52.4",
     "stylus-loader": "^1.4.2",

@@ -33,7 +33,7 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/, include: CLIENT_PATH,
-        loader: "babel-loader"//?stage=0"]
+        loaders: ['ng-annotate' ,"babel-loader"]
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -58,7 +58,7 @@ module.exports = {
     ],
     preLoaders: [
       {
-        test: /\.js?$/, exclude:  [/build/, /node_modules/],
+        test: /\.js?$/, exclude:  [/build/, /node_modules/, /easel/],
         loaders: ['eslint-loader', 'jscs-loader']
       }
     ]
