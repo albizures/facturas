@@ -1,21 +1,22 @@
 doctype html
 html
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    title= htmlWebpackPlugin.options.title
-    meta(name='description', content='')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-  body(ng-controller="main")
-    canvas(al-factura='', header='header')
-    .form
-      input(type='number', ng-model='header.dimensions.x')
-      input(type='number', ng-model='header.dimensions.y')
-      input(type='number', ng-model='header.dimensions.width')
-      input(type='number', ng-model='header.dimensions.height')
-      input(type='text', ng-model='header.data.telefono')
-      input(type='text', ng-model='header.data.nombre')
-      input(type='text', ng-model='header.data.direccion')
-      input(type='text', ng-model='header.data.nit')
-      input(type='text', ng-model='header.data.fecha')
-    script(src='http://localhost:35730/livereload.js', charset='utf-8')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title= htmlWebpackPlugin.options.title
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+	body(ng-controller="main")
+		canvas(al-factura='', header='header', dimensions='dimensions')
+		.form
+			input(type='number', ng-model='dimensions.x')
+			input(type='number', ng-model='dimensions.y')
+			input(type='number', ng-model='dimensions.width')
+			input(type='number', ng-model='dimensions.height')
+			input(type='number', ng-model='dimensions.numCell')
+			input(type='text', ng-model='header.telefono')
+			input(type='text', ng-model='header.nombre')
+			input(type='text', ng-model='header.direccion')
+			input(type='text', ng-model='header.nit')
+			input(type='text', ng-model='header.fecha')
+		script(src='http://localhost:35730/livereload.js', charset='utf-8')
